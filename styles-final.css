@@ -437,3 +437,20 @@
     margin:0!important;
   }
 }
+
+
+/* Match all description-box eyebrow labels to the orange button color. */
+.split small,
+.maintenanceCopy small{
+  color:#ff7900!important;
+}
+@media(max-width:800px){
+  #repair.split>div small,
+  #installation.split>div small,
+  #cooling.split>div small,
+  #ventilation.split>div small,
+  #heating.split>div small,
+  #iaq.split>div small{
+    color:#ff7900!important;
+  }
+}
