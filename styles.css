@@ -24,3 +24,21 @@
 .maintenanceImage .imageLink>img{width:100vw;max-width:none;object-fit:contain;background:#050a11}
 .maintenanceCopy{padding:65px 8%;min-height:430px}
 }
+
+/* Repair and Installation: image first, clean white text box underneath. */
+.twocol{display:grid;grid-template-columns:1fr 1fr;background:#f6f8fb}
+.twocol article{height:auto;position:relative;overflow:hidden;background:#f6f8fb;color:#07111c}
+.twocol .twocolImage{height:540px;min-height:540px;overflow:hidden;background:#050a11}
+.twocol .twocolImage .imageLink{height:100%;min-height:540px}
+.twocol .twocolImage .imageLink>img{height:100%;width:100%;object-fit:contain;background:#050a11;display:block}
+.twocol .twocolCopy{position:static;padding:55px 7%;background:#f6f8fb;color:#07111c}
+.twocol .twocolCopy h2{font-size:clamp(32px,4vw,52px);margin:12px 0}
+.twocol .twocolCopy small{font-weight:900;letter-spacing:3px;color:#18b6ff}
+@media(max-width:800px){
+.twocol{grid-template-columns:1fr}
+.twocol article{height:auto}
+.twocol .twocolImage{height:auto;min-height:0;width:100vw;margin-left:calc((100vw - 100%)/-2);background:#050a11}
+.twocol .twocolImage .imageLink{height:auto;min-height:0;width:100vw}
+.twocol .twocolImage .imageLink>img{height:auto;width:100vw;max-width:none;object-fit:contain;background:#050a11}
+.twocol .twocolCopy{padding:55px 8%;min-height:360px}
+}
