@@ -148,3 +148,37 @@
 /* Definitively remove the global dark overlay from Repair/Installation; their text panels must stay pure white. */
 .twocol article:after{content:none!important;display:none!important;background:none!important;}
 .twocol .twocolCopy{background:#fff!important;color:#07111c!important;position:relative;z-index:2;}
+
+/* Final mobile fix: make Repair and Installation images span the full viewport with natural proportions, centered like Ventilation. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    width:100vw!important;
+    max-width:100vw!important;
+    margin-left:calc((100vw - 100%)/-2)!important;
+    margin-right:0!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+    display:block!important;
+    background:#050a11!important;
+    overflow:hidden!important;
+  }
+  .twocol .twocolImage .imageLink{
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    display:block!important;
+    margin:0!important;
+    background:#050a11!important;
+  }
+  .twocol .twocolImage .imageLink>img{
+    width:100vw!important;
+    max-width:none!important;
+    height:auto!important;
+    display:block!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#050a11!important;
+  }
+}
