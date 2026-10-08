@@ -476,3 +476,16 @@
 
 /* Intro service list: use the Elemental Air reddish-orange accent. */
 .intro p{color:#ff7900!important;}
+
+
+/* Restore the service description labels to the original blue accent. */
+.split small,
+.maintenanceCopy small,
+#heating small,
+#cooling small,
+#ventilation small,
+#iaq small,
+#repair small,
+#installation small{
+  color:#18b6ff!important;
+}
