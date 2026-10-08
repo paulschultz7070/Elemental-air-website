@@ -52,3 +52,18 @@
 /* Make Repair and Installation description boxes pure white like the other light sections. */
 .twocol .twocolCopy{background:#fff;color:#07111c}
 .twocol .twocolCopy p{color:#52606e}
+
+/* Match the black framing above and below the Repair and Installation images on mobile. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    padding:70px 0;
+    background:#050a11;
+    overflow:hidden;
+  }
+  .twocol .twocolImage .imageLink{
+    background:#050a11;
+  }
+  .twocol .twocolImage .imageLink>img{
+    background:#050a11;
+  }
+}
