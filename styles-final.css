@@ -454,3 +454,22 @@
     color:#ff7900!important;
   }
 }
+
+
+/* Restore black bars above and below Cooling, Ventilation, Repair and Installation images on mobile. */
+@media(max-width:800px){
+  #cooling.split>.imageLink,
+  #ventilation.split>.imageLink,
+  #repair.split>.imageLink,
+  #installation.split>.imageLink{
+    padding:45px 0!important;
+    background:#050a11!important;
+    box-sizing:border-box!important;
+  }
+  #cooling.split>.imageLink>img,
+  #ventilation.split>.imageLink>img,
+  #repair.split>.imageLink>img,
+  #installation.split>.imageLink>img{
+    background:#050a11!important;
+  }
+}
