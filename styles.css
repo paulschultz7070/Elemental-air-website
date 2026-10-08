@@ -6,3 +6,18 @@
 #ventilation{background:#f6f8fb;color:#07111c}
 #ventilation p{color:#52606e}
 #ventilation>.imageLink{background:#f6f8fb}
+
+/* Maintenance section: keep the photo clean and put the wording in its own white box. */
+.maintenanceSection{display:grid;grid-template-columns:1fr 1fr;background:#f6f8fb;color:#07111c;min-height:560px}
+.maintenanceImage{min-height:560px;overflow:hidden}
+.maintenanceImage .imageLink{height:100%;min-height:560px}
+.maintenanceImage .imageLink>img{height:100%;object-fit:contain;background:#f6f8fb}
+.maintenanceCopy{padding:9%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.maintenanceCopy small{font-weight:900;letter-spacing:3px;color:#18b6ff}
+.maintenanceCopy h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:12px 0}
+@media(max-width:800px){
+.maintenanceSection{grid-template-columns:1fr;min-height:0}
+.maintenanceImage{min-height:350px}
+.maintenanceImage .imageLink{min-height:350px}
+.maintenanceCopy{padding:65px 8%;min-height:430px}
+}
