@@ -270,3 +270,17 @@
     padding:0!important;
   }
 }
+
+
+/* Zero-gap override: pull Repair and Installation copy upward so the heading/label touches the image section. */
+@media(max-width:800px){
+  #repair.split>div,
+  #installation.split>div{
+    margin-top:-40px!important;
+    padding-top:0!important;
+    min-height:0!important;
+    position:relative!important;
+    z-index:3!important;
+    background:#f6f8fb!important;
+  }
+}
