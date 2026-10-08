@@ -48,3 +48,7 @@
 #about h2{color:#07111c}
 #about .features article{background:#fff;color:#07111c;border-color:#dbe2e8}
 #about .features article p{color:#52606e}
+
+/* Make Repair and Installation description boxes pure white like the other light sections. */
+.twocol .twocolCopy{background:#fff;color:#07111c}
+.twocol .twocolCopy p{color:#52606e}
