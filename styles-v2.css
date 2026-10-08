@@ -323,3 +323,27 @@
     margin-bottom:0!important;
   }
 }
+
+
+/* FINAL: remove the split section's 560px mobile minimum that is creating the large bottom gap. */
+@media(max-width:800px){
+  #cooling.split,
+  #ventilation.split{
+    min-height:0!important;
+    height:auto!important;
+    display:grid!important;
+    grid-template-rows:auto auto!important;
+  }
+  #cooling.split>.imageLink,
+  #ventilation.split>.imageLink{
+    min-height:0!important;
+    height:auto!important;
+  }
+  #cooling.split>div,
+  #ventilation.split>div{
+    min-height:0!important;
+    height:auto!important;
+    padding:65px 8% 65px!important;
+    justify-content:flex-start!important;
+  }
+}
