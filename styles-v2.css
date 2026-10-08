@@ -347,3 +347,45 @@
     justify-content:flex-start!important;
   }
 }
+
+
+/* HARD RESET FOR COOLING + VENTILATION MOBILE LAYOUT
+   Use normal block flow instead of the shared split grid so no grid row can create a bottom spacer. */
+@media(max-width:800px){
+  #cooling.split,
+  #ventilation.split{
+    display:block!important;
+    min-height:0!important;
+    height:auto!important;
+    padding:0!important;
+    overflow:visible!important;
+  }
+  #cooling.split>.imageLink,
+  #ventilation.split>.imageLink{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+  }
+  #cooling.split>.imageLink>img,
+  #ventilation.split>.imageLink>img{
+    display:block!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+  }
+  #cooling.split>div,
+  #ventilation.split>div{
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    align-items:flex-start!important;
+    width:100%!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:65px 8% 65px!important;
+  }
+}
