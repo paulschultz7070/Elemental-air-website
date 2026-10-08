@@ -1,0 +1,272 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#050a11;color:#fff;font-family:Arial,Helvetica,sans-serif}header{position:fixed;z-index:9;top:0;width:100%;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;background:#050a11d9;backdrop-filter:blur(12px);border-bottom:1px solid #ffffff18}.logo{color:#fff;text-decoration:none;font-weight:900;letter-spacing:2px}.logo b{color:#11aaff;margin-left:5px}.logo+nav{display:flex;gap:28px}nav a{color:#fff;text-decoration:none;font-weight:700}nav a:hover{color:#13b5ff}.call,.btn{border-radius:999px;padding:13px 24px;font-weight:900;text-decoration:none;display:inline-block}.call,.btn{background:linear-gradient(100deg,#ff7900,#ffb000);color:#071019}.call{font-size:14px}.hero{height:92vh;min-height:650px;position:relative;display:flex;align-items:center}.hero>img,.banner>img,.card img,.split>img,.twocol article>img{width:100%;height:100%;object-fit:contain;object-position:center center;background:#050a11}.hero>img{position:absolute;inset:0}.shade{position:absolute;inset:0;background:linear-gradient(90deg,#030811d9,#03081155,#03081122)}.heroText{position:relative;z-index:2;margin-left:7%;max-width:720px}.heroText small,section>small,.split small,.banner small,.twocol small{font-weight:900;letter-spacing:3px;color:#18b6ff}.hero h1{font-size:clamp(48px,7vw,100px);line-height:.9;margin:15px 0}.hero h1 span{color:#0caeff}.hero p{font-size:20px}.intro,.dark,.contact{padding:100px 7%;}.intro{background:#f5f8fb;color:#07111c}.intro h2,.dark h2,.contact h2{font-size:clamp(36px,5vw,64px);margin:12px 0}.intro p{max-width:750px;font-size:18px;color:#52606e}.grid{padding:20px 3% 100px;display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.card{height:340px;position:relative;overflow:hidden;border-radius:16px}.card.big{height:440px}.card:after,.twocol article:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 35%,#000c)}.card b{position:absolute;z-index:2;bottom:22px;left:25px;font-size:24px}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}.features article{padding:30px;border:1px solid #ffffff18;border-radius:16px;background:#0b1420}.features strong{font-size:32px;color:#11aaff}.split{min-height:560px;display:grid;grid-template-columns:1fr 1fr;background:#f6f8fb;color:#07111c}.split.reverse{direction:rtl}.split>*{min-height:560px}.split div{padding:9%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}.split h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:12px 0}.split p{font-size:18px;color:#52606e;max-width:550px}.split.dark{background:#07111d;color:#fff}.split.dark p{color:#b5c2ce}.banner{min-height:600px;position:relative;display:flex;align-items:center}.banner>img{position:absolute;inset:0}.banner:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#0003,#000d)}.banner>div{position:relative;z-index:2;margin-left:auto;margin-right:7%;max-width:650px}.banner h2{font-size:clamp(38px,5vw,68px);line-height:1}.twocol{display:grid;grid-template-columns:1fr 1fr}.twocol article{height:540px;position:relative;overflow:hidden}.twocol article>img{position:absolute;inset:0}.twocol article>div{position:absolute;z-index:2;bottom:45px;left:7%;right:7%}.twocol h2{font-size:clamp(32px,4vw,52px)}.contact{background:linear-gradient(110deg,#101c2b,#050a11)}.contact p{color:#afbbc8;font-size:18px}.outline{background:transparent;color:#fff;border:1px solid #ffffff66;margin-left:8px}footer{padding:45px 7%;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid #ffffff18;color:#a9b5c1}footer b{color:#fff;letter-spacing:2px}footer a{color:#fff;text-decoration:none}#menu{display:none;background:none;border:0;color:#fff;font-size:26px}@media(max-width:800px){nav{display:none!important;position:absolute;top:65px;left:0;right:0;background:#050a11;padding:25px;flex-direction:column}nav.open{display:flex!important}header .call{display:none}#menu{display:block}.heroText{margin-left:6%}.grid{grid-template-columns:1fr}.card,.card.big{height:300px}.features,.twocol{grid-template-columns:1fr}.split,.split.reverse{grid-template-columns:1fr;direction:ltr}.split>*{min-height:350px}.split div{padding:65px 8%}.banner{min-height:650px}.banner>div{margin:0 8%}.contact .btn{margin-top:10px}.outline{margin-left:0}}.imageLink{display:block;position:relative;width:100%;height:100%;min-height:inherit;z-index:1}.imageLink>img{width:100%;height:100%;object-fit:contain;object-position:center center;background:#050a11;display:block}.split>.imageLink{min-height:560px}.banner>.imageLink{position:absolute;inset:0;min-height:0}.twocol article>.imageLink{position:absolute;inset:0;min-height:0}.imageLink:hover{filter:brightness(1.08)}@media(max-width:800px){.split>.imageLink{min-height:350px}}.grid .card,.grid .card.big{height:auto;min-height:0;aspect-ratio:auto}.grid .card img{height:auto;aspect-ratio:auto;display:block;object-fit:contain;object-position:center center}.grid .card:after{pointer-events:none}@media(max-width:800px){.grid .card,.grid .card.big{height:auto;min-height:0}}
+/* On mobile, make the ventilation image bars full viewport width. */
+@media(max-width:800px){#ventilation>.imageLink{width:100vw;margin-left:calc((100vw - 100%)/-2);background:#050a11}#ventilation>.imageLink>img{width:100vw;max-width:none;object-fit:contain;background:#050a11}}
+/* Make the Ventilation service card background white to match the light service cards. */
+.grid .card:nth-child(3){background:#fff}
+
+/* Match the Ventilation detail section to the light Cooling section. */
+#ventilation{background:#f6f8fb;color:#07111c}
+#ventilation p{color:#52606e}
+#ventilation>.imageLink{background:#f6f8fb}
+
+/* Maintenance section: keep the photo clean and put the wording in its own white box. */
+.maintenanceSection{display:grid;grid-template-columns:1fr 1fr;background:#f6f8fb;color:#07111c;min-height:560px}
+.maintenanceImage{min-height:560px;overflow:hidden}
+.maintenanceImage .imageLink{height:100%;min-height:560px}
+.maintenanceImage .imageLink>img{height:100%;object-fit:contain;background:#f6f8fb}
+.maintenanceCopy{padding:9%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.maintenanceCopy small{font-weight:900;letter-spacing:3px;color:#18b6ff}
+.maintenanceCopy h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:12px 0}
+@media(max-width:800px){
+.maintenanceSection{grid-template-columns:1fr;min-height:0}
+.maintenanceImage{min-height:350px;width:100vw;margin-left:calc((100vw - 100%)/-2);background:#050a11;overflow:hidden}
+.maintenanceImage .imageLink{min-height:350px;width:100vw;background:#050a11}
+.maintenanceImage .imageLink>img{width:100vw;max-width:none;object-fit:contain;background:#050a11}
+.maintenanceCopy{padding:65px 8%;min-height:430px}
+}
+
+/* Repair and Installation: image first, clean white text box underneath. */
+.twocol{display:grid;grid-template-columns:1fr 1fr;background:#f6f8fb}
+.twocol article{height:auto;position:relative;overflow:hidden;background:#f6f8fb;color:#07111c}
+.twocol .twocolImage{height:540px;min-height:540px;overflow:hidden;background:#050a11}
+.twocol .twocolImage .imageLink{height:100%;min-height:540px}
+.twocol .twocolImage .imageLink>img{height:100%;width:100%;object-fit:contain;background:#050a11;display:block}
+.twocol .twocolCopy{position:static;padding:55px 7%;background:#f6f8fb;color:#07111c}
+.twocol .twocolCopy h2{font-size:clamp(32px,4vw,52px);margin:12px 0}
+.twocol .twocolCopy small{font-weight:900;letter-spacing:3px;color:#18b6ff}
+@media(max-width:800px){
+.twocol{grid-template-columns:1fr}
+.twocol article{height:auto}
+.twocol .twocolImage{height:auto;min-height:0;width:100vw;margin-left:calc((100vw - 100%)/-2);background:#050a11}
+.twocol .twocolImage .imageLink{height:auto;min-height:0;width:100vw}
+.twocol .twocolImage .imageLink>img{height:auto;width:100vw;max-width:none;object-fit:contain;background:#050a11}
+.twocol .twocolCopy{padding:55px 8%;min-height:360px}
+}
+
+/* Make the Why Elemental Air 01/02/03 section white. */
+#about{background:#f6f8fb;color:#07111c}
+#about h2{color:#07111c}
+#about .features article{background:#fff;color:#07111c;border-color:#dbe2e8}
+#about .features article p{color:#52606e}
+
+/* Make Repair and Installation description boxes pure white like the other light sections. */
+.twocol .twocolCopy{background:#fff;color:#07111c}
+.twocol .twocolCopy p{color:#52606e}
+
+/* Match the black framing above and below the Repair and Installation images on mobile. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    padding:70px 0;
+    background:#050a11;
+    overflow:hidden;
+  }
+  .twocol .twocolImage .imageLink{
+    background:#050a11;
+  }
+  .twocol .twocolImage .imageLink>img{
+    background:#050a11;
+  }
+}
+
+/* Repair + Installation: keep the black framing equal on the top and bottom of each mobile image. */
+@media(max-width:800px){
+  .twocol .twocolImage{padding:45px 0;background:#050a11;}
+  .twocol .twocolImage .imageLink{background:#050a11;}
+}
+
+/* Make Repair and Installation mobile images match the Ventilation image presentation exactly. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    width:100vw;
+    margin-left:calc((100vw - 100%)/-2);
+    position:relative;
+    left:auto;
+    transform:none;
+    padding:0;
+    background:#050a11;
+    overflow:hidden;
+  }
+  .twocol .twocolImage .imageLink{
+    width:100vw;
+    height:auto;
+    min-height:0;
+    margin:0;
+    background:#050a11;
+  }
+  .twocol .twocolImage .imageLink>img{
+    display:block;
+    width:100vw;
+    height:auto;
+    max-width:none;
+    object-fit:contain;
+    background:#050a11;
+  }
+}
+
+/* Repair + Installation: match the Heating/Cooling/Ventilation mobile image treatment — centered, uncropped, and clear. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    width:100%;
+    margin:0;
+    left:auto;
+    transform:none;
+    height:350px;
+    min-height:350px;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050a11;
+    overflow:hidden;
+  }
+  .twocol .twocolImage .imageLink{
+    width:100%;
+    height:100%;
+    min-height:350px;
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050a11;
+  }
+  .twocol .twocolImage .imageLink>img{
+    display:block;
+    width:100%;
+    height:100%;
+    max-width:100%;
+    object-fit:contain;
+    object-position:center center;
+    background:#050a11;
+  }
+}
+
+/* Remove the dark shade overlay from Repair and Installation sections. */
+@media(max-width:800px){
+  .twocol article:after{display:none!important;}
+}
+
+/* Definitively remove the global dark overlay from Repair/Installation; their text panels must stay pure white. */
+.twocol article:after{content:none!important;display:none!important;background:none!important;}
+.twocol .twocolCopy{background:#fff!important;color:#07111c!important;position:relative;z-index:2;}
+
+/* Final mobile fix: make Repair and Installation images span the full viewport with natural proportions, centered like Ventilation. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    width:100vw!important;
+    max-width:100vw!important;
+    margin-left:calc((100vw - 100%)/-2)!important;
+    margin-right:0!important;
+    height:auto!important;
+    min-height:0!important;
+    padding:0!important;
+    display:block!important;
+    background:#050a11!important;
+    overflow:hidden!important;
+  }
+  .twocol .twocolImage .imageLink{
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    display:block!important;
+    margin:0!important;
+    background:#050a11!important;
+  }
+  .twocol .twocolImage .imageLink>img{
+    width:100vw!important;
+    max-width:none!important;
+    height:auto!important;
+    display:block!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    background:#050a11!important;
+  }
+}
+
+/* Mobile full-bleed repair/install fix: move the entire two-column section out of the constrained content width. */
+@media(max-width:800px){
+  .twocol{
+    width:100vw!important;
+    max-width:100vw!important;
+    margin-left:calc((100vw - 100%)/-2)!important;
+    margin-right:0!important;
+    overflow:visible!important;
+  }
+  .twocol article{
+    width:100vw!important;
+    max-width:100vw!important;
+    overflow:visible!important;
+  }
+  .twocol .twocolImage,
+  .twocol .twocolImage .imageLink,
+  .twocol .twocolImage .imageLink>img{
+    width:100vw!important;
+    max-width:100vw!important;
+  }
+}
+
+/* Final mobile fix for Repair + Installation: use the source image's natural ratio and center it against the viewport. */
+@media(max-width:800px){
+  #repair.split,
+  #installation.split{
+    width:100%;
+    max-width:100%;
+    overflow:visible;
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  #repair.split>.imageLink,
+  #installation.split>.imageLink{
+    position:relative!important;
+    inset:auto!important;
+    left:50%!important;
+    transform:translateX(-50%)!important;
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:#050a11!important;
+  }
+  #repair.split>.imageLink>img,
+  #installation.split>.imageLink>img{
+    position:relative!important;
+    inset:auto!important;
+    display:block!important;
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    margin:0!important;
+    padding:0!important;
+  }
+}
+
+/* Tighten the Repair + Installation mobile transition so the lettering starts closer to the image, like IAQ. */
+@media(max-width:800px){
+  #repair.split>div,
+  #installation.split>div{
+    padding:20px 8% 65px!important;
+  }
+}
+
+/* FINAL REPAIR/INSTALLATION MOBILE TRANSITION FIX
+   The text panel starts immediately at the image edge—no white spacer above the heading. */
+@media (max-width:800px){
+  #repair.split>div,
+  #installation.split>div{
+    min-height:0!important;
+    padding:0 8% 65px!important;
+    margin:0!important;
+    border:0!important;
+  }
+  #repair.split>div small,
+  #installation.split>div small{
+    margin:0!important;
+    padding:0!important;
+  }
+}
