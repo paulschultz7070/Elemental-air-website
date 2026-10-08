@@ -144,3 +144,7 @@
 @media(max-width:800px){
   .twocol article:after{display:none!important;}
 }
+
+/* Definitively remove the global dark overlay from Repair/Installation; their text panels must stay pure white. */
+.twocol article:after{content:none!important;display:none!important;background:none!important;}
+.twocol .twocolCopy{background:#fff!important;color:#07111c!important;position:relative;z-index:2;}
