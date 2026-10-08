@@ -530,3 +530,29 @@
    font-size:17px!important;
  }
 }
+
+/* The artwork already contains the exact button. Keep the clickable overlay invisible. */
+.heroImageOnly .heroExplore{
+  position:absolute!important;
+  z-index:100!important;
+  left:5%!important;
+  top:72%!important;
+  width:54%!important;
+  height:11%!important;
+  display:block!important;
+  padding:0!important;
+  margin:0!important;
+  border:0!important;
+  border-radius:999px!important;
+  background:transparent!important;
+  color:transparent!important;
+  box-shadow:none!important;
+  text-decoration:none!important;
+  cursor:pointer!important;
+  -webkit-tap-highlight-color:transparent!important;
+}
+.heroImageOnly .heroExplore:focus,
+.heroImageOnly .heroExplore:active{
+  outline:none!important;
+  background:transparent!important;
+}
