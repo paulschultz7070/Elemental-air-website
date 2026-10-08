@@ -610,3 +610,14 @@
   }
 }
 
+
+
+/* RESTORE HERO ARTWORK: remove all CSS blackout overlays from the image. */
+.heroImageOnly::before,
+.heroImageOnly::after{
+  content:none!important;
+  display:none!important;
+  background:transparent!important;
+  height:0!important;
+  width:0!important;
+}
