@@ -245,3 +245,11 @@
     padding:0!important;
   }
 }
+
+/* Tighten the Repair + Installation mobile transition so the lettering starts closer to the image, like IAQ. */
+@media(max-width:800px){
+  #repair.split>div,
+  #installation.split>div{
+    padding:20px 8% 65px!important;
+  }
+}
