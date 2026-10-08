@@ -19,7 +19,8 @@
 .maintenanceCopy h2{font-size:clamp(38px,5vw,64px);line-height:1;margin:12px 0}
 @media(max-width:800px){
 .maintenanceSection{grid-template-columns:1fr;min-height:0}
-.maintenanceImage{min-height:350px}
-.maintenanceImage .imageLink{min-height:350px}
+.maintenanceImage{min-height:350px;width:100vw;margin-left:calc((100vw - 100%)/-2);background:#050a11;overflow:hidden}
+.maintenanceImage .imageLink{min-height:350px;width:100vw;background:#050a11}
+.maintenanceImage .imageLink>img{width:100vw;max-width:none;object-fit:contain;background:#050a11}
 .maintenanceCopy{padding:65px 8%;min-height:430px}
 }
