@@ -67,3 +67,9 @@
     background:#050a11;
   }
 }
+
+/* Repair + Installation: keep the black framing equal on the top and bottom of each mobile image. */
+@media(max-width:800px){
+  .twocol .twocolImage{padding:45px 0;background:#050a11;}
+  .twocol .twocolImage .imageLink{background:#050a11;}
+}
