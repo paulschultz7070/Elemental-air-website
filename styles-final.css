@@ -403,3 +403,37 @@
     justify-content:flex-start!important;
   }
 }
+
+
+/* Repair + Installation: force a true equal visual gap above and below the copy content. */
+@media(max-width:800px){
+  #repair.split>div,
+  #installation.split>div{
+    box-sizing:border-box!important;
+    display:flex!important;
+    flex-direction:column!important;
+    justify-content:flex-start!important;
+    align-items:flex-start!important;
+    padding:65px 8%!important;
+    margin:0!important;
+    min-height:0!important;
+    height:auto!important;
+  }
+  #repair.split>div small,
+  #installation.split>div small{
+    display:block!important;
+    margin:0 0 12px!important;
+  }
+  #repair.split>div h2,
+  #installation.split>div h2{
+    margin:0 0 12px!important;
+  }
+  #repair.split>div p,
+  #installation.split>div p{
+    margin:0 0 18px!important;
+  }
+  #repair.split>div .btn,
+  #installation.split>div .btn{
+    margin:0!important;
+  }
+}
