@@ -572,3 +572,40 @@
     height:8.5%!important;
   }
 }
+
+
+/* Hide the duplicate website header printed inside the hero artwork.
+   Keep the real site header above it untouched. */
+.heroImageOnly::before,
+.heroImageOnly::after{
+  content:"";
+  position:absolute!important;
+  z-index:20!important;
+  top:3.2%!important;
+  height:7.2%!important;
+  background:#050a11!important;
+  pointer-events:none!important;
+}
+.heroImageOnly::before{
+  left:3.2%!important;
+  width:40%!important;
+}
+.heroImageOnly::after{
+  right:3.2%!important;
+  width:9%!important;
+}
+@media(max-width:800px){
+  .heroImageOnly::before,
+  .heroImageOnly::after{
+    top:3.2%!important;
+    height:7.2%!important;
+  }
+  .heroImageOnly::before{
+    left:3.2%!important;
+    width:42%!important;
+  }
+  .heroImageOnly::after{
+    right:3.2%!important;
+    width:10%!important;
+  }
+}
