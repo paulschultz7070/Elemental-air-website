@@ -42,3 +42,9 @@
 .twocol .twocolImage .imageLink>img{height:auto;width:100vw;max-width:none;object-fit:contain;background:#050a11}
 .twocol .twocolCopy{padding:55px 8%;min-height:360px}
 }
+
+/* Make the Why Elemental Air 01/02/03 section white. */
+#about{background:#f6f8fb;color:#07111c}
+#about h2{color:#07111c}
+#about .features article{background:#fff;color:#07111c;border-color:#dbe2e8}
+#about .features article p{color:#52606e}
