@@ -139,3 +139,8 @@
     background:#050a11;
   }
 }
+
+/* Remove the dark shade overlay from Repair and Installation sections. */
+@media(max-width:800px){
+  .twocol article:after{display:none!important;}
+}
