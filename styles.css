@@ -204,3 +204,44 @@
     max-width:100vw!important;
   }
 }
+
+/* Final mobile fix for Repair + Installation: use the source image's natural ratio and center it against the viewport. */
+@media(max-width:800px){
+  #repair.split,
+  #installation.split{
+    width:100%;
+    max-width:100%;
+    overflow:visible;
+    display:grid;
+    grid-template-columns:1fr;
+  }
+  #repair.split>.imageLink,
+  #installation.split>.imageLink{
+    position:relative!important;
+    inset:auto!important;
+    left:50%!important;
+    transform:translateX(-50%)!important;
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    margin:0!important;
+    padding:0!important;
+    overflow:hidden!important;
+    background:#050a11!important;
+  }
+  #repair.split>.imageLink>img,
+  #installation.split>.imageLink>img{
+    position:relative!important;
+    inset:auto!important;
+    display:block!important;
+    width:100vw!important;
+    max-width:100vw!important;
+    height:auto!important;
+    min-height:0!important;
+    object-fit:contain!important;
+    object-position:center center!important;
+    margin:0!important;
+    padding:0!important;
+  }
+}
