@@ -79,3 +79,8 @@
   background:#050a11;
 }
 }
+
+/* Pure white Repair and Installation text boxes. */
+.twocol,.twocol article,.twocol .twocolCopy{background:#fff!important}
+.twocol .twocolCopy{color:#07111c}
+.twocol .twocolCopy p{color:#52606e}
