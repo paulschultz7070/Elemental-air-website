@@ -488,3 +488,8 @@
 .maintenanceCopy small{
   color:#ff7900!important;
 }
+/* Make the Explore Services button embedded in the hero image clickable. */
+.heroImageOnly{height:auto;min-height:0;display:block;position:relative;overflow:hidden;}
+.heroImageOnly>img{position:relative;inset:auto;width:100%;height:auto;display:block;object-fit:contain;object-position:center center;}
+.heroImageOnly .heroExplore{position:absolute;z-index:5;left:6%;top:78.2%;width:49%;height:7.7%;display:block;background:transparent;border-radius:999px;}
+.heroImageOnly .heroExplore:focus-visible{outline:3px solid #18b6ff;outline-offset:3px;}
