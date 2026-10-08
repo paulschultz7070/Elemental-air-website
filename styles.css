@@ -73,3 +73,32 @@
   .twocol .twocolImage{padding:45px 0;background:#050a11;}
   .twocol .twocolImage .imageLink{background:#050a11;}
 }
+
+/* Make Repair and Installation mobile images match the Ventilation image presentation exactly. */
+@media(max-width:800px){
+  .twocol .twocolImage{
+    width:100vw;
+    margin-left:calc((100vw - 100%)/-2);
+    position:relative;
+    left:auto;
+    transform:none;
+    padding:0;
+    background:#050a11;
+    overflow:hidden;
+  }
+  .twocol .twocolImage .imageLink{
+    width:100vw;
+    height:auto;
+    min-height:0;
+    margin:0;
+    background:#050a11;
+  }
+  .twocol .twocolImage .imageLink>img{
+    display:block;
+    width:100vw;
+    height:auto;
+    max-width:none;
+    object-fit:contain;
+    background:#050a11;
+  }
+}
