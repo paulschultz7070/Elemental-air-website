@@ -306,3 +306,20 @@
     margin-bottom:18px!important;
   }
 }
+
+
+/* Match Cooling and Ventilation text panels to IAQ: content-sized mobile sections with the same bottom breathing room. */
+@media(max-width:800px){
+  #cooling.split>div,
+  #ventilation.split>div{
+    min-height:0!important;
+    height:auto!important;
+    box-sizing:border-box!important;
+    padding:65px 8% 65px!important;
+    justify-content:flex-start!important;
+  }
+  #cooling.split>div .btn,
+  #ventilation.split>div .btn{
+    margin-bottom:0!important;
+  }
+}
